@@ -13,4 +13,4 @@ In this repository, you'll find all the materials Herr Professor Schreiber share
 
 ## 📝 License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) - view the LICENSE.md file for details.
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
