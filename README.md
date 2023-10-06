@@ -9,7 +9,7 @@
 
 ## 📂 Content Structure
 
-In this repository, you'll find all the materials Herr Professor Schreiber shares for each lesson. For every lesson, there's a separate folder containing a Java package with all the classes discussed that day.
+In this repository, you'll find all the materials Herr Professor Schreiber shares for each lesson. For every lesson, there's a separate folder containing a Java package with all the content discussed that day.
 
 ## 📝 License
 
