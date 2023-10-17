@@ -1,0 +1,14 @@
+Eine Instanzvariable ist spezifisch für jedes Objekt, das du aus einer Klasse erstellst.
+Jedes Objekt hat seine eigene Kopie dieser Variable. Zum Beispiel könntest du eine Klasse
+"Person" haben, und eine Instanzvariable könnte "Name" sein. Jede Person hat ihren eigenen
+Namen, also wäre "Name" eine Instanzvariable.
+
+Eine Klassenvariable, wie ich vorher erklärt habe, ist geteilt zwischen allen Objekten dieser
+Klasse. Sie ist eher wie ein gemeinsamer Speicherplatz für Informationen, die für die gesamte
+Klasse wichtig sind. Wenn du also etwas in einer Klassenvariable änderst, betrifft es alle
+Objekte dieser Klasse.
+
+Der Hauptunterschied liegt also darin, dass Instanzvariablen spezifisch für jedes Objekt
+sind, während Klassenvariablen von allen Objekten dieser Klasse geteilt werden.
+Instanzvariablen sind individuell, Klassenvariablen sind gemeinsam. Verstehst du
+das einigermaßen?
