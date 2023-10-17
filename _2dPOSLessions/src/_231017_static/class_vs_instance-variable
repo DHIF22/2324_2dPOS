@@ -1,3 +1,5 @@
+ChatGPT: Erklaere auch den Unterscheid zwischen Instanz- und Klassenvariable
+
 Eine Instanzvariable ist spezifisch für jedes Objekt, das du aus einer Klasse erstellst.
 Jedes Objekt hat seine eigene Kopie dieser Variable. Zum Beispiel könntest du eine Klasse
 "Person" haben, und eine Instanzvariable könnte "Name" sein. Jede Person hat ihren eigenen

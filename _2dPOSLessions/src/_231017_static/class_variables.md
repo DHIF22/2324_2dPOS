@@ -1,3 +1,6 @@
+ChatGPT promt: 
+In java gibt es Klassenvariablen. Erklaere die Klassenvariablen fuer 15 jaehrige
+
 Klar! Stell dir vor, eine Klasse in Java ist 
 wie eine Vorlage für Objekte. Eine Klassenvariable 
 ist wie ein Speicherplatz, der für alle Objekte 
