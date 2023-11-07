@@ -37,6 +37,7 @@ public class StaticExample {
 
     // fibos are 1, 1, 2, 3, 5, 8, 13, 21, ...
     public static String fibonacciNumbers(int amount){
+        return "look at Sandra Knittelfelder Code";
 
     }
 }

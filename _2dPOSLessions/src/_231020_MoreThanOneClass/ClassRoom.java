@@ -18,6 +18,15 @@ public class ClassRoom {
 
     public Student getStudentById(int id){
         // Your turn: find the student in students by id.
+        for(int i = 0; i < currentStudentAmount; i++){
+            Student student = students[i];
+            // frag den Student nach Id
+            //if(students[i].getId() == id)
+            if(student.getId() == id){
+                return student;
+            }
+        }
+        return null;
     }
 
     @Override

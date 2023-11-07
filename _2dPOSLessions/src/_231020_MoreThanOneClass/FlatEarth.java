@@ -25,5 +25,7 @@ public class FlatEarth {
             dhif24.addStudent(tempStudent);
         }
         System.out.println(dhif24);
+
+        System.out.println(dhif24.getStudentById(25));
     }
 }
