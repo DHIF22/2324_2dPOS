@@ -4,10 +4,12 @@ public class Coordinate {
     // your turn: implement the class for a 2-d coordinate.
     private int x;
     private int y;
+    private double distance;
 
     public Coordinate(int x, int y){
         this.x = x;
         this.y = y;
+        setDistance();
     }
 
     public int getX(){
@@ -16,6 +18,14 @@ public class Coordinate {
 
     public int getY(){
         return y;
+    }
+
+    public double getDistance(){
+        return distance;
+    }
+
+    private void setDistance(){
+        distance = Math.sqrt(x*x + y*y);
     }
 
     @Override // this is not overload

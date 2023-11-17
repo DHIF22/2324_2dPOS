@@ -15,6 +15,12 @@ public class Cloud {
         }
     }
 
+    public void addPoint(int x, int y){
+        addPoint(new Coordinate(x, y));
+    }
+
+
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
