@@ -13,8 +13,10 @@ public class Company {
     }
 
     public void addEmployee(Person employee){
-        employees[counterOfEmployees] = employee;
-        counterOfEmployees++;
+        if(counterOfEmployees < employees.length) {
+            employees[counterOfEmployees] = employee;
+            counterOfEmployees++;
+        }
     }
 
     public void addDirectors(Person director){
@@ -26,6 +28,27 @@ public class Company {
         }
 
         addEmployee(director);
+    }
+
+
+    public float getMonthlyCostsOfEmployee(){
+        float result = 0.0f;
+        for(int i = 0; i < counterOfEmployees; i++){
+            result += employees[i].getSalary();
+        }
+        return result;
+    }
+
+    public float getMonthlyCostsOfDirectors(){
+        float result = 0.0f;
+        for(int i = 0; i < counterOfDirectors; i++){
+            result += bordOfDirectors[i].getSalary();
+        }
+        return result;
+    }
+
+    public float getTotalCostsMonthly(){
+        return getMonthlyCostsOfDirectors() + getMonthlyCostsOfEmployee();
     }
 
     @Override
