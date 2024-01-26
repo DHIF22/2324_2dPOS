@@ -11,8 +11,10 @@ public class Zoo {
         Animal[] temp = new Animal[animals.length + 1];
         for(int i = 0; i < animals.length; ++i){
             temp[i] = animals[i];
+            temp[i].calcVeteranCosts();
         }
         animals = temp;
+        animal.calcVeteranCosts();
         animals[animals.length - 1] = animal;
     }
 

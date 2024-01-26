@@ -2,6 +2,8 @@ package _240126_abstract_zoo;
 
 public class Dog extends Animal{
 
+    private float veteranFactor = .8f;
+
     public Dog(String name){
         super(name, "Dog");
     }
@@ -21,4 +23,9 @@ public class Dog extends Animal{
         System.out.println(TYPE + " is sleeping");
     }
 
+    @Override
+    public void calcVeteranCosts() {
+        float cost = VET_PRICE * veteranFactor;
+        setVetCost(cost);
+    }
 }
