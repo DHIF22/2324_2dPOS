@@ -43,7 +43,6 @@ public class HowToUseArrayList {
         TheWorld world = new TheWorld();
         world.printPersons();
 
-
-
+        // the person id isnt set - this is a problem which should be solved in near future.
     }
 }
