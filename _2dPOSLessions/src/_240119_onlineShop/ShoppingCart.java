@@ -19,4 +19,25 @@ public class ShoppingCart {
 
         this.cart = tempCart;
     }
+
+    public void showBill(){
+        float sum = 0.0f;
+
+        // step through all articles
+        for(int i = 0; i < cart.length; ++i){
+            Article article = cart[i];
+            float price = article.getPrice();
+            System.out.println(article + " " + String.format("%.2f Euro", price));
+            sum += price;
+        }
+        System.out.println("---------------------");
+        System.out.println(String.format("Sum %.2f", sum));
+    }
+
+    public static void main(String[] args) {
+        ShoppingCart shoppingCart = new ShoppingCart();
+        shoppingCart.addToCart(new Dvd(12, 4.6f, "ThisDeVauDe", "12:23:45", 2009));
+        shoppingCart.addToCart(new Book(14, 12.7f, 2009, "TheBook", "SchreiberWars"));
+        shoppingCart.showBill();
+    }
 }

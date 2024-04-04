@@ -15,6 +15,7 @@ public class Dvd extends Article{
     }
 
     public float getPrice(){
+        System.out.println("DEBUG> in Dvd.getPrice");
         return super.getPrice() * (1 + VAT);
     }
 
