@@ -6,9 +6,13 @@ public class TestMyLinkedList {
         MyLinkedList linkedList = new MyLinkedList();
 
         Node node = new Node(new Data(1, "Takeshi"));
-        linkedList.append(node);
-        linkedList.append(new Node(new Data(3, "Marvel")));
-        linkedList.append(new Node(new Data(2, "KingfuPanda")));
+        //linkedList.append(node);
+        //linkedList.append(new Node(new Data(3, "Marvel")));
+        //linkedList.append(new Node(new Data(2, "KingfuPanda")));
+
+        linkedList.insert(node);
+        linkedList.insert(new Node(new Data(3, "Marvel")));
+        linkedList.insert(new Node(new Data(2, "KingfuPanda")));
 
         System.out.println(linkedList.toString());
 

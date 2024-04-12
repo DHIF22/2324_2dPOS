@@ -13,18 +13,11 @@ public class MyLinkedList {
 
     public MyLinkedList() {
         System.out.println("Linked List started");
-        head = new Node(null);
     }
 
     public void append(Node node){
         if(head.getNext() == null){
             head.setNext(node);
-        } else {
-            Node currentNode = head.getNext();
-            while(currentNode.getNext() != null){
-                currentNode = currentNode.getNext();
-            }
-            currentNode.setNext(node);
         }
     }
 
@@ -35,6 +28,22 @@ public class MyLinkedList {
 
     public void insert(Node node){
         // your turn!
+        if(head == null){
+            head = node;
+        } else {
+            Node currentNode = head;
+            int valueToInsert = node.getData().id;
+
+            // find teh right node
+            while(currentNode.getNext() != null){
+                if(currentNode.getNext().getData().id > valueToInsert){
+                    currentNode = currentNode.getNext();
+                    continue;
+                }
+            }
+            node.setNext(currentNode.getNext());
+            currentNode.setNext(node);
+        }
     }
 
     @Override
@@ -43,9 +52,15 @@ public class MyLinkedList {
 
         sb.append("MyLinkedList\n");
         Node currentNode = head;
-        while(currentNode.getNext() != null){
-            currentNode = currentNode.getNext();
+        boolean isRunning = true;
+        while(isRunning){
             sb.append(currentNode.getData().id + " " + currentNode.getData().name + "\n" );
+
+            if(currentNode.getNext() == null){
+                isRunning = false;
+            } else {
+                currentNode = currentNode.getNext();
+            }
         }
 
         return sb.toString();
