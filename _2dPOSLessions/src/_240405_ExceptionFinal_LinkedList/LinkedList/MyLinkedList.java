@@ -35,11 +35,8 @@ public class MyLinkedList {
             int valueToInsert = node.getData().id;
 
             // find teh right node
-            while(currentNode.getNext() != null){
-                if(currentNode.getNext().getData().id > valueToInsert){
-                    currentNode = currentNode.getNext();
-                    continue;
-                }
+            while(currentNode.getNext() != null && currentNode.getNext().getData().id < valueToInsert){
+                currentNode = currentNode.getNext();
             }
             node.setNext(currentNode.getNext());
             currentNode.setNext(node);
