@@ -5,4 +5,10 @@ package _240412_LinkedListExtends;
 //
 
 public class PersonNode extends BaseNode{
+    String name;
+
+    @Override
+    public String toString() {
+        return "name='" + name + "'";
+    }
 }
