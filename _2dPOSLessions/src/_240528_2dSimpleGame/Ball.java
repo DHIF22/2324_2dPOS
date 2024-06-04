@@ -6,6 +6,7 @@ import java.awt.*;
 
 public class Ball extends Figure implements Drawable {
     private int radius = 10;
+    private Vector acceleration = new Vector(0, 1);
 
     public Ball(int x, int y){
         this.location = new Vector(x, y);
@@ -17,13 +18,17 @@ public class Ball extends Figure implements Drawable {
             speed.multi(new Vector(-1, 1));
         }
 
-        if( (location.y < 0) || ((location.y + 2*radius) >= height)){
+        if(location.y < 0){
             speed.multi(new Vector(1, -1));
         }
 
+        if((location.y + 2*radius) >= height){
+            speed.multi(new Vector(1, -1));
+            location.y = height;
+        }
+
+        speed.add(acceleration);
         location.add(speed);
-        //location.x += xSpeed;
-        //location.y += ySpeed;
     }
 
     public void draw(Graphics2D g){

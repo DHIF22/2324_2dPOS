@@ -16,7 +16,7 @@ public class Box extends Figure implements Drawable{
 
     @Override
     public void update(int width, int height) {
-        location.add(speed);
+        location.add(speed); // s = s_0 + v_0 * t
     }
 
     @Override
