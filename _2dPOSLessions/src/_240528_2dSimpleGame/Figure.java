@@ -1,8 +1,9 @@
 package _240528_2dSimpleGame;
 
+import _240604_GameAndVector.Vector;
+
 public class Figure {
-    protected int x, y;
-    protected int xSpeed = 1;
-    protected int ySpeed = 1;
+    protected Vector location;
+    protected Vector speed;
 
 }
