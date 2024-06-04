@@ -8,10 +8,22 @@ public class Ball extends Figure implements Drawable {
     public Ball(int x, int y){
         this.x = x;
         this.y = y;
-        this.ySpeed = 0;
+        this.xSpeed = 10;
+        this.ySpeed = 5;
     }
 
-    public void update(){
+    public void update(int width, int height){
+        if(x <= 0){
+            xSpeed *= -1;
+        }
+        if((x + 2*radius) >= width){
+            xSpeed *= -1;
+        }
+
+        if( (y < 0) || ((y + 2*radius) >= height)){
+            ySpeed *= -1;
+        }
+
         x += xSpeed;
         y += ySpeed;
     }

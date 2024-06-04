@@ -10,12 +10,12 @@ public class Game {
 
     public Game(){
         figures.add(new Ball(10, 10));
-        figures.add(new Box(20, 20, 30, 40));
+        //figures.add(new Box(20, 20, 30, 40));
     }
 
-    public void update(){
+    public void update(int width, int height){
         for(Drawable d : figures) {
-            d.update();
+            d.update(width, height);
         }
     }
 

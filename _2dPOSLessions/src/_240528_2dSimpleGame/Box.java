@@ -14,7 +14,7 @@ public class Box extends Figure implements Drawable{
     }
 
     @Override
-    public void update() {
+    public void update(int width, int height) {
         x += xSpeed;
         y += ySpeed;
     }
