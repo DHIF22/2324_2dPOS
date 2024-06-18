@@ -2,14 +2,21 @@ package _240528_2dSimpleGame;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class PaintArea2d extends JPanel {
 
-    private Game game = null;
+    private MyGraphics game = null;
 
     public PaintArea2d() {
         super();
         game = new Game();
+    }
+
+    public PaintArea2d(MyGraphics game) {
+        super();
+        this.game = game;
     }
 
     @Override
@@ -21,4 +28,5 @@ public class PaintArea2d extends JPanel {
         game.update(width, height);
         game.draw(g2d);
     }
+
 }
